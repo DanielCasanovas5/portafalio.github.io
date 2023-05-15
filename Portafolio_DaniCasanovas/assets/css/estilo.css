@@ -48,18 +48,25 @@ html {
 }
 
 /* Icono flotante linkedin */
-.iconoflotante {
+#icono-flotante {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 999;
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    text-align: center;
 }
 
-.iconoflotante:hover {
+.iconoflotante1:hover {
     animation: jello;
     animation-duration: 2s;
 }
-
+.iconoflotante2:hover {
+    animation: bounce;
+    animation-duration: 2s;
+}
 /* MENU */
 .contenedor-header {
     background: #1e2326;
