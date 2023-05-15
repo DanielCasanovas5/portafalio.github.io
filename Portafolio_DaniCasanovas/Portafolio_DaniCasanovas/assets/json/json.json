@@ -1,0 +1,128 @@
+{
+    "Nombre": "Daniel Casanovas Ferrero",
+    "Título": "Junior Fullstack Developer",
+    "Sobre mí": "Hola, soy Daniel Casanovas.Fisioterapeuta, deportista, en periodo de transición hacia mi nueva pasión El mundo de las tecnologías. Con ganas de aportar mis conocimientos, mi profesionalidad y   mi voluntad de mejorar constantemente mi desarrollo profesional en la programación.Trabajando en equipo con la máxima energía para aportar el más alto valor a su empresa. ",
+    "Datos personales": [
+        {
+            "Teléfono": "601014414"
+        },
+        {
+            "Email": "danielcasanovas02@gmail.com"
+        },
+        {
+            "Ubicación": "Badalona, 08915"
+        }
+    ],
+    "Idiomas": [
+        {
+            "Español & catalán": "Nativo"
+        },
+        {
+            "Inglés": [
+                "Leído: Intermedio",
+                "Escrito: Intermedio",
+                "Hablado: Básico"
+            ]
+        }
+    ],
+    "Intereses": [
+        "MUSICA",
+        "VIAJAR",
+        "DEPORTE"
+    ],
+    "Formación": [
+        {
+            "institucion": "Fundación Esplai",
+            "titulo": "Programación, Python & IA",
+            "fecha": "2023 (5 meses)",
+            "descripción": "Programación Frontend:HTML5, CSS3, JS, Bootstrap, UX/UI.Programación Backend:Python, Django, Scipy, Numpy, pandas. IA (Machine learning con Python. Scikit Learn, Matplotlib, TensorFlow. Base de Datos: SQL (MySQL) y NoSQL (MongoDB). Entornos de Desarrollo: Visual Studio Code, Anaconda, Jupyter.Otros:</em></u> Emmet, RegEx, SCRUM, Github."
+        },
+        {
+            "institucion": "Microsoft Corporation",
+            "titulo": "Microsoft Certified: Azure Fundamentals",
+            "fecha": "2023",
+            "descripción": "La certificación valida los conocimientos básicos sobre los servicios en la nube y cómo se proporcionan con Azure."
+        },
+        {
+            "institucion": "Generalitat de Catalunya",
+            "titulo": "ACTIC Nivel Medio",
+            "fecha": "2022",
+            "descripción": "Dominio efectivo en el uso de las TIC en relación a los ámbitos generales de aplicación."
+        },
+        {
+            "institucion": "Tecnocampus (UPF)",
+            "titulo": "Doble Grado Universitario: Fisioterapia - Ciencias de la Actividad Física y el Deporte",
+            "fecha": "2015-2020"
+        },
+        {
+            "institucion": "Federació Catalana de Basquetbol",
+            "titulo": "Entrenador Baloncesto Nivel 0",
+            "fecha": "2012"
+        }
+    ],
+    "Experiencia Laboral": [
+        {
+            "puesto": "Fisioterapia a domicilio",
+            "empresa": "Hospital Sant Rafael",
+            "lugar-fecha": "Barcelona, 2021-2023",
+            "descripcion": [
+                "Responsable de la rehabilitación terapéutica de los pacientes.",
+                "Gestión administrativa de cada paciente.",
+                "Elaboración de informes evaluativos."
+            ]
+        },
+        {
+            "puesto": "Monitor Campus Olimpia",
+            "empresa": "CEM Guinardó",
+            "lugar-fecha": "Barcelona, 2021 (1 mes) | 2022 (1 mes)",
+            "descripcion": [
+                "Entrenador principal de grupos de jóvenes deportistas.",
+                "Planificar y dirigir las actividades lúdico-deportivas.",
+                "Impulsar valores éticos en el ejercicio físico."
+            ]
+        },
+        {
+            "puesto": "Personal Servicios Online",
+            "empresa": "Carrefor S.A La Maquinista",
+            "lugar-fecha": "Barcelona, 2020-2021 (6 meses)",
+            "descripcion": [
+                "Flexibilidad en los procesos y el trabajo en equipo.",
+                "Gestión personalizada de los pedidos.",
+                "Organizar la logística de la recepción de los vehículos."
+            ]
+        },
+        {
+            "puesto": "Operario Almacén",
+            "empresa": "Decathlon S.A España",
+            "lugar-fecha": "Prat de Llobregat, 2020 (3 meses) | 2019 (6 meses)"
+        },
+        {
+            "puesto": "Operario Almacén",
+            "empresa": "Benito Sports S.A.",
+            "lugar-fecha": "Terrasa, 2019 (3 meses)"
+        }
+    ],
+    "Hard Skills": [
+        "Javascript: 50%",
+        "HTML & CSS: 70%",
+        "MySQL & NoSQL: 50%",
+        "Python: 70%",
+        "IA & Machine Learning: 55%"
+    ],
+    "Soft Skills": [
+        "Comunicación: 80%",
+        "Trabajo en Equipo: 90%",
+        "Creatividad: 99%%",
+        "Proactivo: 85%",
+        "Empatía: 80%"
+    ],
+    "Contacto": [
+        "Nombre",
+        "Teléfono",
+        "Correo",
+        "Tema",
+        "Mensaje",
+        "Enviar mensaje"
+    ],
+    "Footer": "2023 CV. Todos los derechos reservados a DANIEL CASANOVAS FERRERO."
+}

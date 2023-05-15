@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Biblioteca bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Biblioteca css animación -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="ruta/al/archivo/anime.min.js"></script>
+    <!-- Biblioteca jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Portfolio_DanielCasanovas</title>
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+</head>
+
+<body>
+
+    <!-- GIT-HUB Y LINKEDIN FLOTANTE -->
+    <div id="icono-flotante">
+        <a href="https://github.com/DanielCasanovas5/portafalio.github.io.git" target="_blank"><img
+                src="assets/img/github.png" alt="LinkedIn" width="90" height="90" class="iconoflotante2">
+        </a>
+        <a href="https://www.linkedin.com/in/danicf/" target="_blank">
+            <img src="./assets/img/LinkedIn_logo_initials.png" alt="LinkedIn" width="80" height="80"
+                class="iconoflotante1">
+        </a>
+    </div>
+
+    <!-- HUEVO DE PASCUA -->
+    <img id="huevo" src="./assets/img/huev.png" width="100" height="100">
+
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header noche">
+
+        <header>
+            <!-- Hora actual y Botón día/noche -->
+            <div class="logo">
+                <span id="datetime"></span>
+                <button id="cambiar-modo" class="boton-modo">Modo Día</button>
+            </div>
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio noche">
+        <div class="contenido-banner">
+            <!-- Foto CV con cambio al pasar por encima de foto con el ratón -->
+            <div class="contenedor-img">
+                <img src="./assets/img/foto_CV.png" alt="imagen1" id="foto1">
+                <img src="./assets/img/FOTO2_cv.jpg" alt="imagen2" id="foto2">
+            </div>
+            <h1>Daniel Casanovas Ferrero</h1>
+            <h2 class="sub">Junior Fullstack Developer</h2>
+            <div class="redes">
+                <a id="linkedin" href="https://www.linkedin.com/in/danicf/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi noche">
+        <div class="contenido-seccion">
+            <u>
+                <h2>Sobre Mí</h2>
+            </u>
+            <p><span>Hola, soy Daniel Casanovas.</span> Fisioterapeuta, deportista, en periodo de transición hacia mi
+                nueva pasión "El mundo de las tecnologías". Con ganas de aportar mis conocimientos, mi profesionalidad y
+                mi voluntad de mejorar constantemente mi desarrollo profesional en la programación.
+                Trabajando en equipo con la máxima energía para aportar el más alto valor a su empresa. </p>
+
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +34601014414
+                        </li>
+                        <li>
+
+                            <strong>Email</strong>
+                            <a href="mailto:danielcasanovas02@gmail.com" class="correo">Click me</a>
+
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>
+                            Badalona, 08915
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <table>
+                        <h3>Idiomas</h3>
+                        <tr>
+                            <td class="idioma">Español & <span>catalán</span></td>
+                            <td class="tabla">Nativo</td>
+                        </tr>
+                        <tr>
+                            <td class="idioma">Inglés</td>
+                            <td>
+                                <ul class="tabla">
+                                    <li> Leído: Intermedio</li>
+                                    <li> Escrito: Intermedio</li>
+                                    <li> Hablado: Básico</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses ">
+                        <div class="interes animacion1">
+                            <a href="https://open.spotify.com/playlist/37i9dQZF1DX32oVqaQE8BM" target="_blank">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>MUSICA</span>
+                            </a>
+                        </div>
+                        <div class="interes animacion2">
+                            <a href="https://www.mundukos.com/asia/ruta-para-viajar-por-el-sudeste-asiatico/"
+                                target="_blank">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>VIAJAR</span>
+                            </a>
+                        </div>
+                        <div class="interes animacion3">
+                            <a href="https://encestando.es/" target="_blank">
+                                <i class="fa-solid fa-person-hiking"></i>
+                                <span>DEPORTE</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Botón para descargar CV -->
+            <button>
+                <a href="./assets/CV/CV_DaniCasanovas.pdf" download>Descargar CV <i
+                        class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CURRÍCULUM -->
+    <section id="curriculum" class="curriculum noche">
+        <div class="contenido-seccion">
+            <u>
+                <h2>Currículum</h2>
+            </u>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Formación</h3>
+                    <div class="item izq">
+                        <h4>Programación, Python & IA </h4>
+                        <span class="casa">Fundación Esplai</span>
+                        <span class="fecha">Prat de llobregat, 2023 (5 meses)</span>
+                        <span class="bootcamp">
+                            <p><u><em>Programación Frontend:</em></u></p>
+                            <p>HTML5, CSS3, JS, Bootstrap, UX/UI.</p>
+                            <p><u><em>Programación Backend:</em></u></p>
+                            <p>Python, Django, Scipy, Numpy, pandas.</p>
+                            <p><u><em>IA (Machine learning con Python):</em></u></p>
+                            <p> Scikit Learn, Matplotlib, TensorFlow.</p>
+                            <p><u><em> Base de Datos:</em></u></p>
+                            <p> SQL (MySQL) y NoSQL (MongoDB).</p>
+                            <p><u><em> Entornos de Desarrollo:</em></u></p>
+                            <p> Visual Studio Code, Anaconda, Jupyter.</p>
+                            <p><u><em> Otros:</em></u> Emmet, RegEx, SCRUM, Github.</p>
+                        </span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Microsoft Certified: Azure Fundamentals</h4>
+                        <span class="casa">Microsoft Corporation</span>
+                        <span class="fecha">2023</span>
+                        <p>
+                            La certificación valida los conocimientos básicos sobre los servicios en la nube y cómo se
+                            proporcionan con Azure.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>ACTIC Nivel Medio</h4>
+                        <span class="casa">"Generalitat de Catalunya"</span>
+                        <span class="fecha">2022</span>
+                        <p>Dominio efectivo en el uso de las TIC en relación a los ámbitos generales de aplicación.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Doble Grado Universitario: Fisioterapia - Ciencias de la Actividad Física y el Deporte</h4>
+                        <span class="casa">Tecnocampus (UPF)</span>
+                        <span class="fecha">2015-2020</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Entrenador Baloncesto Nivel 0</h4>
+                        <span class="casa">"Federació Catalana de Basquetbol"</span>
+                        <span class="fecha">2012</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Fisioterapia a domicilio</h4>
+                        <span class="casa">Hospital Sant Rafael</span>
+                        <span class="fecha">Barcelona, 2021-2023</span>
+                        <ul>
+                            <li>Responsable de la rehabilitación terapéutica de los pacientes.</li>
+                            <li>Gestión administrativa de cada paciente.</li>
+                            <li>Elaboración de informes evaluativos.</li>
+                        </ul>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Monitor Campus Olimpia</h4>
+                        <span class="casa">CEM Guinardó</span>
+                        <span class="fecha">Barcelona, 2021 (1 mes) | 2022 (1 mes)</span>
+                        <ul>
+                            <li>Entrenador principal de grupos de jóvenes deportistas.</li>
+                            <li>Planificar y dirigir las actividades lúdico-deportivas.</li>
+                            <li>Impulsar valores éticos en el ejercicio físico.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Personal Servicios Online</h4>
+                        <span class="casa">Carrefor S.A La Maquinista</span>
+                        <span class="fecha">Barcelona, 2020-2021 (6 meses)</span>
+                        <ul>
+                            <li>Flexibilidad en los procesos y el trabajo en equipo.</li>
+                            <li>Gestión personalizada de los pedidos. </li>
+                            <li>Organizar la logística de la recepción de los vehículos.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operario Almacén</h4>
+                        <span class="casa">Decathlon S.A España</span>
+                        <span class="fecha">Prat de Llobregat, 2020 (3 meses) | 2019 (6 meses)</span>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operario Almacén</h4>
+                        <span class="casa">Benito Sports S.A.</span>
+                        <span class="fecha">Terrasa, 2019 (3 meses) </span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills noche" id="skills">
+        <div class="contenido-seccion">
+            </u>
+            <u>
+                <h2>Skills</h2>
+            </u>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Hard Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL & NoSQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>IA & Machine Learning</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactivo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Empatía</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto noche ">
+        <div class="contenido-seccion">
+            <u>
+                <h2>CONTACTO</h2>
+            </u>
+            <!-- Formulario -->
+            <div class="col">
+                <input type="text" id="nombre" placeholder="Tú Nombre">
+                <input type="text" id="telefono" placeholder="Número telefónico">
+                <input type="text" id="correo" placeholder="Dirección de correo">
+                <input type="text" id="tema" placeholder="Tema">
+                <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button id="enviar">
+                    Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+                <div id="mensaje-validacion"></div>
+            </div>
+
+
+
+    </section>
+
+    <!-- footer -->
+    <footer class="noche">
+        <a href="#inicio" class="arriba ">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a id="linkedin" href="https://www.linkedin.com/in/danicf/"><i class="fa-brands fa-linkedin-in"></i></a>
+
+        </div>
+        </div>
+        <hr class="hr">
+        <p>&copy; 2023 CV. Todos los derechos reservados a DANIEL CASANOVAS FERRERO.</p>
+
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
