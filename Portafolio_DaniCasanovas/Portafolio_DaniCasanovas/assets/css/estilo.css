@@ -57,6 +57,7 @@ html {
     flex-direction:column;
     margin: auto;
     text-align: center;
+    float: right;
 }
 
 .iconoflotante1:hover {
@@ -166,7 +167,7 @@ html {
 /* SECCION I N I C I O */
 .inicio {
     background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
-        url(/assets/img/fondo.jpg);
+        url(/assets/img/fondo_2.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -920,7 +921,7 @@ footer .arriba {
     nav {
         display: none;
     }
-
+  
     .nav-responsive {
         display: block;
     }
@@ -952,6 +953,7 @@ footer .arriba {
     .sobremi .fila .col {
         width: fit-content;
     }
+  
 
     .skills .fila {
         display: block;
@@ -977,20 +979,7 @@ footer .arriba {
         margin-left: 20px;
     }
 
-    .portfolio .galeria {
-        display: block;
-        width: 100%;
-    }
-
-    .portfolio .galeria .proyecto {
-        max-width: 100%;
-    }
-
-    .portfolio .galeria .proyecto img {
-        width: 100%;
-    }
-
-    .contacto .fila {
+      .contacto .fila {
         display: block;
     }
 

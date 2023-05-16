@@ -177,8 +177,7 @@ $(document).ready(function () {
         if (validacion !== "") {
             $("#mensaje-validacion").html(validacion);
         } else {
-            $("#mensaje-validacion").html("");
-            alert("¡Mensaje enviado!");
+            $("#mensaje-validacion").html("<p>Mensaje enviado correctamente.</p>");
         }
     });
 });
